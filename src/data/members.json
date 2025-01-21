@@ -1,0 +1,44 @@
+{
+  "members": [
+    {
+      "id": "member1",
+      "name": "Jordi Bonet",
+      "role": "Full Stack Developer",
+      "avatar": "https://github.com/jorbush.png",
+      "bio": "Passionate about web development and open source",
+      "skills": ["JavaScript", "React", "Node.js"],
+      "github": "https://github.com/jorbush",
+      "linkedin": "https://www.linkedin.com/in/jordi-bonet-valiente-69140418b/"
+    },
+    {
+      "id": "member2",
+      "name": "Mark Rivera",
+      "role": "Full Stack Developer",
+      "avatar": "https://github.com/mriverre8.png",
+      "bio": "Passionate about web development and open source",
+      "skills": ["JavaScript", "React", "Node.js"],
+      "github": "https://github.com/mriverre8",
+      "linkedin": "https://www.linkedin.com/in/mark-rivera-ba33b2233/"
+    },
+    {
+      "id": "member3",
+      "name": "Albert Martínez",
+      "role": "Full Stack Developer",
+      "avatar": "https://github.com/AlbertMartinezM.png",
+      "bio": "Passionate about web development and open source",
+      "skills": ["JavaScript", "React", "Node.js"],
+      "github": "https://github.com/AlbertMartinezM",
+      "linkedin": "https://www.linkedin.com/in/albert-mart%C3%ADnez-m%C3%BArcia-230349291/"
+    },
+    {
+      "id": "member4",
+      "name": "Alejandro Delgado",
+      "role": "Frontend Developer",
+      "avatar": "https://github.com/Alejandro9kgm.png",
+      "bio": "Passionate about web development and open source",
+      "skills": ["JavaScript", "React", "Node.js"],
+      "github": "https://github.com/Alejandro9kgm",
+      "linkedin": "https://www.linkedin.com/in/alejandro-delgado-60b9b11b1/"
+    }
+  ]
+}

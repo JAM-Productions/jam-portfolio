@@ -1,0 +1,146 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+---
+
+<Layout title="JAM-Productions - Blog">
+	<main>
+		<div class="blog-header">
+			<h1>Our Blog</h1>
+			<p>Insights, updates, and stories from the JAM-Productions team</p>
+		</div>
+		<div class="posts-grid">
+			{posts.map((post) => (
+				<article class="post-card">
+					{post.data.image && (
+						<div class="post-image" style={`background-image: url(${post.data.image})`}></div>
+					)}
+					<div class="post-content">
+						<h2>{post.data.title}</h2>
+						<div class="post-meta">
+							<span class="author">By {post.data.author}</span>
+							<span class="date">{new Date(post.data.publishDate).toLocaleDateString()}</span>
+						</div>
+						<p class="description">{post.data.description}</p>
+						<a href={`/blog/${post.slug}`} class="read-more">Read more →</a>
+					</div>
+				</article>
+			))}
+		</div>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: 6rem auto 0;
+		padding: 1rem;
+		width: 1200px;
+		max-width: calc(100% - 2rem);
+		color: white;
+	}
+
+	.blog-header {
+		text-align: center;
+		padding: 4rem 1rem;
+		background: linear-gradient(rgba(var(--accent-dark), 0.3), transparent);
+		border-radius: 1rem;
+		margin-bottom: 4rem;
+	}
+
+	h1 {
+		font-size: clamp(2.5rem, 6vw, 3.5rem);
+		font-weight: 700;
+		margin-bottom: 1rem;
+		background: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.blog-header p {
+		font-size: clamp(1rem, 3vw, 1.2rem);
+		color: rgb(var(--accent-light));
+	}
+
+	.posts-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+		gap: 2rem;
+	}
+
+	.post-card {
+		background: rgba(255, 255, 255, 0.05);
+		border-radius: 1rem;
+		overflow: hidden;
+		transition: transform 0.3s, box-shadow 0.3s;
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.post-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 4px 20px rgba(var(--accent), 0.2);
+	}
+
+	.post-image {
+		height: 200px;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.post-content {
+		padding: 1.5rem;
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.post-meta {
+		display: flex;
+		gap: 1rem;
+		color: #888;
+		font-size: 0.9rem;
+		margin: 0.5rem 0 1rem;
+		flex-wrap: wrap;
+	}
+
+	.description {
+		color: #ccc;
+		margin-bottom: 1.5rem;
+		line-height: 1.6;
+		flex-grow: 1;
+	}
+
+	.read-more {
+		color: rgb(var(--accent-light));
+		text-decoration: none;
+		font-weight: 500;
+		display: inline-flex;
+		align-items: center;
+		transition: transform 0.2s;
+		margin-top: auto;
+	}
+
+	.read-more:hover {
+		transform: translateX(5px);
+	}
+
+	h2 {
+		font-size: 1.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	@media (max-width: 768px) {
+		.blog-header {
+			padding: 3rem 1rem;
+			margin-bottom: 2rem;
+		}
+
+		.posts-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

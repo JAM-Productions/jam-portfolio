@@ -1,0 +1,13 @@
+{
+  "projects": [
+    {
+      "id": "project1",
+      "title": "Project One",
+      "description": "A sample project showcasing our capabilities",
+      "image": "/images/projects/project1.jpg",
+      "technologies": ["Astro", "React", "TailwindCSS"],
+      "github": "https://github.com/jam-productions/project1",
+      "live": "https://project1.jam-productions.com"
+    }
+  ]
+}
