@@ -2,12 +2,39 @@
   "projects": [
     {
       "id": "project1",
-      "title": "Project One",
-      "description": "A sample project showcasing our capabilities",
-      "image": "/images/projects/project1.jpg",
-      "technologies": ["Astro", "React", "TailwindCSS"],
-      "github": "https://github.com/jam-productions/project1",
-      "live": "https://project1.jam-productions.com"
+      "title": "Malker",
+      "description": "A web application to manage a social plan with your friends",
+      "image": "/images/malker.png",
+      "technologies": ["React", "JavaScript", "Python", "Flask", "Firebase", "Vite"],
+      "github": "https://github.com/JAM-Productions/malker",
+      "live": "https://jam-productions.github.io/malker/"
+    },
+    {
+      "id": "project2",
+      "title": "Dinoshort",
+      "description": "An url shortener",
+      "image": "/images/dinoshort.webp",
+      "technologies": ["TypeScript", "Astro", "TailwindCSS"],
+      "github": "https://github.com/JAM-Productions/dinoshort",
+      "live": "https://dinoshort.vercel.app/"
+    },
+    {
+      "id": "project3",
+      "title": "Saurita",
+      "description": "A secretary bot for discord",
+      "image": "/images/saurita.png",
+      "technologies": ["NodeJS"],
+      "github": "https://github.com/JAM-Productions/saurita",
+      "live": "https://github.com/JAM-Productions/saurita"
+    },
+    {
+      "id": "project4",
+      "title": "Tubesaurus",
+      "description": "A website to download YouTube videostube",
+      "image": "/images/tubesaurus.png",
+      "technologies": ["React", "Next.js", "TailwindCSS", "TypeScript"],
+      "github": "https://github.com/JAM-Productions/tubesaurus",
+      "live": "https://tubesaurus.vercel.app/"
     }
   ]
 }
