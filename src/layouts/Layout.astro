@@ -38,7 +38,9 @@ const { title } = Astro.props;
 				</div>
 			</div>
 		</nav>
-		<slot />
+		<div class="content">
+			<slot />
+		</div>	
 		<footer>
 			<div class="footer-content">
 				<p>&copy; {new Date().getFullYear()} JAM-Productions. All rights reserved.</p>
@@ -88,10 +90,13 @@ const { title } = Astro.props;
 	);
 }
 
-	html {
+	html, body {
 		font-family: monospace;
 		background: #13151a;
 		scroll-behavior: smooth;
+		flex-direction: column;
+		height: 100%;
+  		display: flex;
 	}
 	code {
 		font-family:
@@ -178,6 +183,10 @@ const { title } = Astro.props;
 		background: rgb(var(--accent-dark));
 	}
 
+	.content{
+		flex: 1;
+	}
+	
 	footer {
 		background: rgba(19, 21, 26, 0.95);
 		border-top: 1px solid rgba(255, 255, 255, 0.1);

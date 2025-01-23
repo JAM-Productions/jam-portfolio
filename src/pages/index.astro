@@ -129,7 +129,7 @@ import { projects } from '../data/projects.json';
 	.project-grid, .team-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
-		gap: 1rem;
+		gap: 1.5rem;
 		padding: 1rem 0;
 	}
 
@@ -202,7 +202,6 @@ import { projects } from '../data/projects.json';
 	.member-card {
 		text-align: center;
 		padding: 4rem 1.5rem 1.5rem;
-		margin-top: 3rem;
 	}
 
 	.role {
@@ -224,6 +223,7 @@ import { projects } from '../data/projects.json';
 	h2 {
 		font-size: clamp(2rem, 5vw, 2.5rem);
 		margin-bottom: 2rem;
+		padding-top: 2rem;
 		text-align: center;
 		background: var(--accent-gradient);
 		-webkit-background-clip: text;
@@ -248,8 +248,8 @@ import { projects } from '../data/projects.json';
 			grid-template-columns: 1fr;
 		}
 
-		.member-card {
-			margin-top: 4rem;
+		.member-card, .project-card {
+			margin-top: 2rem;
 		}
 	}
 
