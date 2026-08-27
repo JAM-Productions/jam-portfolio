@@ -29,10 +29,12 @@ import { projects } from '../data/projects.json';
 									<span class="tech-tag">{tech}</span>
 								))}
 							</div>
-							<div class="project-links">
-								<a href={project.github} target="_blank" rel="noopener noreferrer">GitHub</a>
-								<a href={project.live} target="_blank" rel="noopener noreferrer">Live Demo</a>
-							</div>
+							{(project.github || project.live) && (
+								<div class="project-links">
+									{project.github && (<a href={project.github} target="_blank" rel="noopener noreferrer">GitHub</a>)}
+									{project.live && (<a href={project.live} target="_blank" rel="noopener noreferrer">Live Demo</a>)}
+								</div>
+							)}
 						</div>
 					</div>
 				))}
