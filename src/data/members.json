@@ -13,9 +13,9 @@
     {
       "id": "member2",
       "name": "Mark Rivera",
-      "role": "Full Stack Developer",
+      "role": "Software Engineer | Frontend",
       "avatar": "https://github.com/mriverre8.png",
-      "bio": "Passionate about web development and open source",
+      "bio": "Enthusiast of web development and open source, most of my experience is focused on frontend stuff",
       "skills": ["React", "JavaScript", "TailwindCSS", "Typescript"],
       "github": "https://github.com/mriverre8",
       "linkedin": "https://www.linkedin.com/in/mark-rivera-ba33b2233/"
