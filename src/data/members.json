@@ -3,10 +3,10 @@
     {
       "id": "member1",
       "name": "Jordi Bonet",
-      "role": "Full Stack Developer",
+      "role": "Computer Engineer",
       "avatar": "https://github.com/jorbush.png",
-      "bio": "Passionate about web development and open source",
-      "skills": ["JavaScript", "React", "Node.js"],
+      "bio": "Committed to continuous learning and adept at tackling challenges",
+      "skills": ["TypeScript", "Rust", "React", "Python", "Go"],
       "github": "https://github.com/jorbush",
       "linkedin": "https://www.linkedin.com/in/jordi-bonet-valiente-69140418b/"
     },
